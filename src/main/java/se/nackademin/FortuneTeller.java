@@ -17,7 +17,7 @@ public class FortuneTeller {
      *
      */
     public String calculate() {
-        //TODO: Implement
+        int hej = magicNumbers.calculateA();
         return "Not implemented!";
     }
 

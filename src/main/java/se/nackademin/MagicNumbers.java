@@ -63,8 +63,18 @@ public class MagicNumbers {
     }
 
     public int calculateE() {
-        //TODO: calculate E
-        return 0;
+        int res = age*income*income*height;
+        double res3 = Math.sqrt(res2);
+        while (true) {
+            if (res3 >= 10)
+                res3 = res3 / 2;
+            else
+                break;
+        }
+        res = (int) (Math.round(res3));
+        if (res == 10)
+            res = 0;
+        return res;
     }
 
     public void setName(String name) {
