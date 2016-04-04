@@ -17,9 +17,19 @@ public class FortuneTeller {
      *
      */
     public String calculate() {
-        int hej = magicNumbers.calculateA();
-        String A = translator.DoTranslate();
-        return "Not implemented!";
+    	int a = magicNumbers.calculateA();
+    	int b = magicNumbers.calculateB();
+    	int c = magicNumbers.calculateC();
+    	int d = magicNumbers.calculateD();
+    	int e = magicNumbers.calculateE();
+    	Translator translator = new Translator();
+    	String A = translator.DoTranslate(a,"A");
+    	String B = translator.DoTranslate(b,"B");
+    	String C = translator.DoTranslate(c,"C");
+    	String D = translator.DoTranslate(d,"D");
+    	String E = translator.DoTranslate(e,"E");
+    	String spadom = "Din framtid är " + A + ". Du borde sluta " + B + ". Vi ser att du snart kommer att skaffa " + C + ". Snart kommer du vilja " + D + ", men då är det viktigt att du är " + E +".";
+        return spadom;
     }
 
     public static void main(String[] args) {

@@ -1,21 +1,21 @@
 package se.nackademin;
 
 public class Translator {
-    private String [10] adjektiv;
-    private String [10] substantiv;
-    private String [10] verb;
+    private String [] adjektiv = {"stor", "liten", "stark", "svag", "mjuk", "hård", "snabb", "vacker", "ljus", "mörk"};
+    private String [] substantiv = {"en lönehöjning", "en lönesänkning", "en fotboja", "en katt", "en hund", "ett hus", "ett barn", "ett elstängsel", "en dator", "ett golv"};
+    private String [] verb = {"springa", "ljuga", "flyga", "se", "vara", "äta", "mäta", "gå", "röra", "resa"};
     
-    public String DoTranslate(int i, String t) {
-    	if (t == "A")
-    		return adjektiv[i];
-    	else if(t == "B")
-    			return verb[i];
-    	else if (t == "C")
-    		return substantiv[i];
-    	else if (t == "D")
+    public String DoTranslate(int index, String type) {
+    	if (type == "A")
+    		return adjektiv[index];
+    	else if(type == "B")
+    			return verb[index];
+    	else if (type == "C")
+    		return substantiv[index];
+    	else if (type == "D")
     		return verb[index];
-    	else if (t == "E")
-    		return adjektiv[i];
+    	else 
+    		return adjektiv[index];
     }
 
 }
