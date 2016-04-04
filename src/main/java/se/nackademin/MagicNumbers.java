@@ -63,7 +63,7 @@ public class MagicNumbers {
     }
 
     public int calculateE() {
-        int res = age*income*income*height;
+        long res = age*income*income*height;
         double res3 = Math.sqrt(res2);
         while (true) {
             if (res3 >= 10)

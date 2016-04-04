@@ -18,6 +18,7 @@ public class FortuneTeller {
      */
     public String calculate() {
         int hej = magicNumbers.calculateA();
+        String A = translator.DoTranslate();
         return "Not implemented!";
     }
 
